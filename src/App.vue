@@ -59,13 +59,13 @@ p {
 }
 
 #pozivnica-container {
-  max-width: 96vmin;
+  max-width: 95.5vmin;
   display: inline-block;
   margin-bottom: 10px;
 }
 
 #map-container {
-  max-width: 96vmin;
+  max-width: 95.5vmin;
   display: inline-block;
 }
 
