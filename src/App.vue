@@ -3,6 +3,7 @@
     <div id="pozivnica-container">
       <img alt="Pozivnica" src="./assets/pozivnica.jpeg">
     </div>
+    <br>
     <p>Molimo potvrdite Vaš dolazak najkasnije do 15.07.2022. godine putem sledeće forme: </p>
     <div id="forma">
       <contact-form/>
@@ -40,6 +41,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 #mobile-form {
@@ -53,20 +55,22 @@ p {
 #forma {
   max-width: 1800px;
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 #pozivnica-container {
-  max-width: 100vmin;
+  max-width: 96vmin;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 #map-container {
-  max-width: 100vmin;
+  max-width: 96vmin;
   display: inline-block;
 }
 
 a, img {
-  width: 100%;
+  /*width: 100%;*/
   width: -moz-available; /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   width: fill-available;
