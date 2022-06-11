@@ -10,8 +10,8 @@
     <br>
     <div id="mobile-form">
       <p>Vaš dolazak možete potvrditi i putem mobilnog telefona:</p>
-      <p>Mladoženja: +381607606515</p>
-      <p>Mlada: +381654501379</p>
+      <p>Mladoženja: <a href="tel:+381607606515">+381607606515</a></p>
+      <p>Mlada: <a href="tel:+381654501379">+381654501379</a></p>
     </div>
     <br>
     <div id="map-container">
@@ -59,6 +59,7 @@ p {
   max-width: 100vmin;
   display: inline-block;
 }
+
 #map-container {
   max-width: 100vmin;
   display: inline-block;
@@ -66,8 +67,8 @@ p {
 
 a, img {
   width: 100%;
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   width: fill-available;
 }
 
