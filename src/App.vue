@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="pozivnica-container">
-      <img alt="Pozivnica" src="./assets/pozivnica.jpeg">
+      <img alt="Pozivnica" src="./assets/pozivnica.jpeg" loading="lazy">
     </div>
     <br>
     <p>Molimo potvrdite Vaš dolazak najkasnije do 15.07.2022. godine putem sledeće forme: </p>
@@ -75,8 +75,13 @@ a, img {
   width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   width: fill-available;
 }
+@media only screen and (max-width: 480px) {
+img{
+  width: 360px;
+}
+}
 
 h4 {
-  font-size: 1.8vmin;
+font-size: 1.8vmin;
 }
 </style>
