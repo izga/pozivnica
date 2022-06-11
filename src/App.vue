@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Pozivnica" src="./assets/pozivnica.jpeg">
+    <div id="pozivnica-container">
+      <img alt="Pozivnica" src="./assets/pozivnica.jpeg">
+    </div>
     <p>Molimo potvrdite Vaš dolazak najkasnije do 15.07.2022. godine putem sledeće forme: </p>
-    <contact-form />
-    <br>
-    <div id="mobile-form">
-    <p>Vaš dolazak možete potvrditi i putem mobilnog telefona:</p>
-    <p>Mladoženja: +381607606515</p>
-    <p>Mlada: +381654501379</p>
+    <div id="forma">
+      <contact-form/>
     </div>
     <br>
-    <a href="https://goo.gl/maps/zNuXFVtMzmqnqmhQA" target="_blank"><img alt="Pozivnica" src="./assets/maps.png"></a>
-    <h4>Kliknite mapu za precizniju lokaciju.</h4>
+    <div id="mobile-form">
+      <p>Vaš dolazak možete potvrditi i putem mobilnog telefona:</p>
+      <p>Mladoženja: +381607606515</p>
+      <p>Mlada: +381654501379</p>
+    </div>
+    <br>
+    <div id="map-container">
+      <a href="https://goo.gl/maps/zNuXFVtMzmqnqmhQA" target="_blank"><img alt="Pozivnica" src="./assets/maps.png"></a>
+      <h4>Kliknite mapu za precizniju lokaciju.</h4>
+    </div>
   </div>
 </template>
 
@@ -37,15 +43,35 @@ export default {
 }
 
 #mobile-form {
-
+  /*all is good*/
 }
 
 p {
-  font-size: 28px;
+  font-size: 2.8vmin;
 }
 
-img {
-  width: 700px;
-  padding-bottom: 60px;
+#forma {
+  max-width: 1800px;
+  display: inline-block;
+}
+
+#pozivnica-container {
+  max-width: 100vmin;
+  display: inline-block;
+}
+#map-container {
+  max-width: 100vmin;
+  display: inline-block;
+}
+
+a, img {
+  width: 100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+}
+
+h4 {
+  font-size: 1.8vmin;
 }
 </style>

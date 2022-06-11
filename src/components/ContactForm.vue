@@ -73,7 +73,7 @@ export default {
 
 label {
   float: left;
-  font-size: 28px ;
+  font-size: 2.2vmin ;
 }
 input[type=text], [type=email], textarea {
   width: 100%;
@@ -81,10 +81,10 @@ input[type=text], [type=email], textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
+  margin-top: 10px;
   margin-bottom: 16px;
   resize: vertical;
-  font-size: 32px ;
+  font-size: 2vmin ;
 }
 
 input[type=submit] {
@@ -94,7 +94,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 22px ;
+  font-size: 2.2vmin;
 }
 
 input[type=submit]:hover {
@@ -107,7 +107,6 @@ input[type=submit]:hover {
   text-align: center;
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
+  padding: 2%;
 }
 </style>
